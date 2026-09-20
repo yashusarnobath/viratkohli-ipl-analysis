@@ -27,7 +27,8 @@ body {
     margin: auto;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -94,7 +95,8 @@ body {
     color: #F59E0B;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
+
 section {
     padding: 90px 0;
     border-top: 1px solid #193878;
@@ -166,6 +168,12 @@ section h2 {
     letter-spacing: 2px;
 }
 
+.note p {
+    color: #C7D8FF;
+}
+
+/* ================= STORY CARDS ================= */
+
 .story {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -174,7 +182,11 @@ section h2 {
 }
 
 .story-card {
-    background: linear-gradient(145deg, rgba(124,58,237,.18), rgba(255,255,255,.05));
+    background: linear-gradient(
+        145deg,
+        rgba(124,58,237,.18),
+        rgba(255,255,255,.05)
+    );
     border: 1px solid #4169B2;
     padding: 28px;
     border-radius: 10px;
@@ -192,6 +204,8 @@ section h2 {
     color: #C7D8FF;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
     border-top: 1px solid #193878;
     padding: 45px 0 70px;
@@ -200,7 +214,10 @@ footer {
     font-size: 12px;
 }
 
+/* ================= MOBILE ================= */
+
 @media (max-width:750px) {
+
     .hero {
         min-height: auto;
         padding: 100px 0;
@@ -214,6 +231,7 @@ footer {
         font-size: 18px;
     }
 }
+
 </style>
 </head>
 
@@ -240,11 +258,10 @@ EVOLUTION
 </h1>
 
 <p class="hero-description">
-
 A season-by-season performance analysis of Virat Kohli's IPL career,
-examining how his scoring profile, batting efficiency and bowling
-matchups evolved across nearly two decades of T20 cricket.
-
+examining how his scoring profile, scoring efficiency, bowling matchups,
+batting phases and dismissal patterns evolved across nearly two decades
+of T20 cricket.
 </p>
 
 <div class="meta">
@@ -263,9 +280,11 @@ BALL-BY-BALL DATA
 
 <a href="#runs">RUN SCORING</a>
 
+<a href="#efficiency">EFFICIENCY</a>
+
 <a href="#pace">PACE & SPIN</a>
 
-<a href="#efficiency">EFFICIENCY</a>
+<a href="#phases">BATTING PHASES</a>
 
 <a href="#dismissals">DISMISSALS</a>
 
@@ -276,7 +295,6 @@ BALL-BY-BALL DATA
 </div>
 
 </header>
-
 
 
 <!-- ================= OVERVIEW ================= -->
@@ -297,8 +315,9 @@ UNDERSTANDING THE
 This project analyses Virat Kohli's IPL batting career using
 ball-by-ball data. Instead of looking only at total runs,
 the analysis examines how those runs were constructed,
-how efficiently he scored and how his performance changed
-against different bowling types.
+how efficiently he scored, how his performance varied against
+different bowling types and how his scoring changed across
+different phases of an innings.
 
 </p>
 
@@ -308,15 +327,21 @@ against different bowling types.
 KEY QUESTIONS
 </div>
 
+<p>
 How did Kohli's scoring profile change across seasons?
+<br>
+How did his scoring efficiency change?
+<br>
 How did his strike rate vary against pace and spin?
-Did boundary frequency and dot-ball pressure change?
+<br>
+How did his scoring intensity change across batting phases?
+<br>
 What dismissal patterns appeared throughout his career?
+</p>
 
 </div>
 
 </section>
-
 
 
 <!-- ================= RUN SCORING ================= -->
@@ -348,100 +373,61 @@ but how those runs were created.
 QUESTION
 </div>
 
+<p>
 Was Kohli's scoring output driven primarily by accumulation,
 boundary hitting, or a combination of both?
-
-</div>
-
-
-<div class="tableau-box">
-
-TABLEAU PUBLIC DASHBOARD<br><br>
-
-YOUR RUN-SCORING EVOLUTION DASHBOARD<br>
-
-WILL BE EMBEDDED HERE
-
-</div>
-
-
-<div class="note">
-
-<div class="note-title">
-ANALYST NOTE
-</div>
-
-<br>
-
-Add the key observation from your Tableau analysis here.
-For example: changes in boundary contribution, strike rate
-or scoring composition between different periods.
-
-</div>
-
-</section>
-
-
-
-<!-- ================= PACE SPIN ================= -->
-
-<section id="pace">
-
-<div class="section-number">
-03 · STRIKE RATE VS PACE & SPIN
-</div>
-
-<h2>
-WHO WAS HE
-<span class="gold">SCORING AGAINST?</span>
-</h2>
-
-<p class="section-description">
-
-This analysis compares Kohli's batting strike rate against
-different bowling categories, including pace, spin,
-bowling style and bowling arm.
-
 </p>
 
-<div class="question">
-
-<div class="question-title">
-QUESTION
 </div>
-
-How did Kohli's scoring rate vary against different bowling
-types across his IPL career?
-
-</div>
-
 
 <div class="tableau-box">
 
-TABLEAU PUBLIC DASHBOARD<br><br>
+<div>
 
-YOUR PACE & SPIN ANALYSIS<br>
+<strong>TABLEAU PUBLIC DASHBOARD</strong>
 
-WILL BE EMBEDDED HERE
+<br><br>
+
+VIRAT KOHLI — IPL RUN-SCORING EVOLUTION
+
+<br><br>
+
+<small>
+Interactive Tableau dashboard will be embedded here.
+</small>
 
 </div>
 
+</div>
 
 <div class="note">
 
 <div class="note-title">
-ANALYST NOTE
+ANALYST TAKEAWAY
 </div>
 
 <br>
 
-Add the evidence-based observation from your Pace vs Spin
-analysis here.
+<p>
+Kohli's run production varied considerably across seasons,
+with changes not only in total output but also in the contribution
+of running between the wickets and boundary scoring.
+
+The 2016 season stands out with 973 runs at a
+152.03 strike rate.
+
+The run composition also shows the contribution of both
+accumulation and boundary scoring, with the 2016 season recording
+409 runs from 1s, 2s and 3s, 336 runs from fours and 228 runs
+from sixes.
+
+Later seasons show further periods of increased scoring intensity,
+including a strike rate of 154.70 in 2024 and 165.85 in 2026.
+</p>
 
 </div>
 
 </section>
-
 
 
 <!-- ================= EFFICIENCY ================= -->
@@ -449,19 +435,20 @@ analysis here.
 <section id="efficiency">
 
 <div class="section-number">
-04 · SCORING EFFICIENCY
+03 · SCORING EFFICIENCY
 </div>
 
 <h2>
-BOUNDARIES,
-<span class="gold">DOTS & PRESSURE</span>
+DID KOHLI BECOME A MORE
+<span class="gold">EFFICIENT</span>
+SCORER?
 </h2>
 
 <p class="section-description">
 
-Strike rate alone does not explain scoring efficiency.
-Boundary frequency and dot-ball percentage provide another
-way to understand how Kohli constructed his innings.
+This analysis tracks balls per boundary and dot-ball percentage
+across IPL seasons to examine how efficiently Kohli converted
+deliveries into scoring opportunities.
 
 </p>
 
@@ -471,38 +458,227 @@ way to understand how Kohli constructed his innings.
 QUESTION
 </div>
 
-Did scoring efficiency change because Kohli hit more boundaries,
-played fewer dot balls, or through a combination of both?
+<p>
+Did Kohli's scoring efficiency improve through more frequent
+boundaries and fewer dot balls?
+</p>
 
 </div>
-
 
 <div class="tableau-box">
 
-TABLEAU PUBLIC DASHBOARD<br><br>
+<div>
 
-YOUR SCORING EFFICIENCY DASHBOARD<br>
+<strong>TABLEAU PUBLIC DASHBOARD</strong>
 
-WILL BE EMBEDDED HERE
+<br><br>
+
+BOUNDARY FREQUENCY & DOT-BALL RATE
+
+<br><br>
+
+<small>
+Interactive Tableau dashboard will be embedded here.
+</small>
 
 </div>
 
+</div>
 
 <div class="note">
 
 <div class="note-title">
-ANALYST NOTE
+ANALYST TAKEAWAY
 </div>
 
 <br>
 
-Add the key finding from your Boundary Frequency &
-Dot-Ball Rate analysis.
+<p>
+The later-period data shows a stronger scoring-efficiency profile.
+
+In 2022, the dashboard records 7.35 balls per boundary
+and a 39.12% dot-ball rate.
+
+By 2024, balls per boundary had fallen to 4.79,
+while dot-ball percentage was 30.90%.
+
+In 2026, the dashboard records 4.15 balls per boundary
+and a 26.11% dot-ball rate.
+
+The later data therefore shows more frequent boundary scoring
+alongside a lower proportion of dot balls.
+</p>
 
 </div>
 
 </section>
 
+
+<!-- ================= PACE SPIN ================= -->
+
+<section id="pace">
+
+<div class="section-number">
+04 · PACE & SPIN MATCHUPS
+</div>
+
+<h2>
+HOW DID KOHLI
+<span class="gold">MATCH UP?</span>
+</h2>
+
+<p class="section-description">
+
+This analysis compares Kohli's batting strike rate against
+pace and spin, with further breakdowns by bowling style
+and bowling arm.
+
+The analysis allows the viewer to move beyond a simple
+pace-versus-spin comparison and examine individual bowling
+profiles.
+
+</p>
+
+<div class="question">
+
+<div class="question-title">
+QUESTION
+</div>
+
+<p>
+How does Kohli's scoring rate change against different
+bowling styles and bowling arms?
+</p>
+
+</div>
+
+<div class="tableau-box">
+
+<div>
+
+<strong>TABLEAU PUBLIC DASHBOARD</strong>
+
+<br><br>
+
+STRIKE RATE AGAINST PACE & SPIN
+
+<br><br>
+
+<small>
+Interactive Tableau dashboard will be embedded here.
+</small>
+
+</div>
+
+</div>
+
+<div class="note">
+
+<div class="note-title">
+ANALYST TAKEAWAY
+</div>
+
+<br>
+
+<p>
+Overall strike rate can hide important matchup differences.
+
+Breaking the data down by pace, spin, bowling style and
+bowling arm provides a more detailed view of the conditions
+in which Kohli's scoring rate changes.
+
+The dashboard is designed to allow the viewer to isolate
+specific bowling categories and examine the corresponding
+strike-rate patterns.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= BATTING PHASES ================= -->
+
+<section id="phases">
+
+<div class="section-number">
+05 · BATTING PHASES
+</div>
+
+<h2>
+WHEN DID KOHLI
+<span class="gold">ACCELERATE?</span>
+</h2>
+
+<p class="section-description">
+
+This analysis compares Kohli's strike rate across the
+Powerplay, Middle Overs and Death Overs to understand
+how his scoring intensity changed throughout an innings.
+
+</p>
+
+<div class="question">
+
+<div class="question-title">
+QUESTION
+</div>
+
+<p>
+How did Kohli's scoring intensity vary across different
+phases of an IPL innings?
+</p>
+
+</div>
+
+<div class="tableau-box">
+
+<div>
+
+<strong>TABLEAU PUBLIC DASHBOARD</strong>
+
+<br><br>
+
+VIRAT KOHLI — IPL STRIKE RATE BY BATTING PHASE
+
+<br><br>
+
+<small>
+Interactive Tableau dashboard will be embedded here.
+</small>
+
+</div>
+
+</div>
+
+<div class="note">
+
+<div class="note-title">
+ANALYST TAKEAWAY
+</div>
+
+<br>
+
+<p>
+Kohli's scoring intensity varies substantially across
+innings phases.
+
+The Death Overs contain some of the highest seasonal
+strike-rate values in the dashboard, reaching 266.7 in
+2015 and 2019, while the dashboard records 216.0 in 2023
+and 237.5 in 2026.
+
+Powerplay and Middle Overs show different scoring profiles
+across the career.
+
+Extreme strike-rate values should be interpreted alongside
+balls faced because smaller samples can produce large
+seasonal variations.
+</p>
+
+</div>
+
+</section>
 
 
 <!-- ================= DISMISSALS ================= -->
@@ -510,7 +686,7 @@ Dot-Ball Rate analysis.
 <section id="dismissals">
 
 <div class="section-number">
-05 · DISMISSAL PATTERN
+06 · DISMISSAL PATTERNS
 </div>
 
 <h2>
@@ -520,9 +696,10 @@ HOW DID
 
 <p class="section-description">
 
-Dismissal analysis looks at the ways Kohli was dismissed
-throughout his IPL career and identifies recurring patterns
-in how his innings ended.
+This analysis examines Kohli's dismissal types and
+balls per dismissal across different bowling styles,
+providing a view of how his innings ended and how
+dismissal patterns varied by matchup.
 
 </p>
 
@@ -532,37 +709,56 @@ in how his innings ended.
 QUESTION
 </div>
 
-Which dismissal modes occurred most frequently and
-how did the pattern change across different periods?
+<p>
+Which dismissal types occurred most frequently, and how did
+dismissal frequency vary across bowling styles?
+</p>
 
 </div>
-
 
 <div class="tableau-box">
 
-TABLEAU PUBLIC DASHBOARD<br><br>
+<div>
 
-YOUR DISMISSAL ANALYSIS<br>
+<strong>TABLEAU PUBLIC DASHBOARD</strong>
 
-WILL BE EMBEDDED HERE
+<br><br>
+
+DISMISSAL ANALYSIS OF VIRAT KOHLI
+
+<br><br>
+
+<small>
+Interactive Tableau dashboard will be embedded here.
+</small>
 
 </div>
 
+</div>
 
 <div class="note">
 
 <div class="note-title">
-ANALYST NOTE
+ANALYST TAKEAWAY
 </div>
 
 <br>
 
-Add the evidence-based observation from your dismissal analysis.
+<p>
+Caught dismissals are the dominant dismissal type in the
+displayed dataset, with 157 dismissals, followed by
+bowled with 43 and LBW with 12.
+
+Stumped and caught-and-bowled dismissals account for
+5 each in the displayed dashboard.
+
+The bowling-style analysis adds another layer by showing
+balls per dismissal across different pace and spin profiles.
+</p>
 
 </div>
 
 </section>
-
 
 
 <!-- ================= PERFORMANCE STORY ================= -->
@@ -570,36 +766,53 @@ Add the evidence-based observation from your dismissal analysis.
 <section id="story">
 
 <div class="section-number">
-06 · PERFORMANCE STORY
+07 · PERFORMANCE STORY
 </div>
 
 <h2>
-PEAK → DIP →
-<span class="gold">REVIVAL</span>
+FROM <span class="gold">PEAK</span>
+TO REVIVAL
 </h2>
 
 <p class="section-description">
 
-The final stage of the project connects the individual
-analyses into one performance story. The aim is to explain
-what changed across different phases of Kohli's IPL career
-using measurable indicators.
+Bringing the analysis together, this section connects
+Kohli's run production, scoring efficiency, bowling matchups,
+batting phases and dismissal patterns to understand the
+broader evolution of his IPL batting.
 
 </p>
 
+<div class="question">
+
+<div class="question-title">
+QUESTION
+</div>
+
+<p>
+What changed in Kohli's batting profile across the different
+phases of his IPL career?
+</p>
+
+</div>
+
 
 <div class="story">
+
 
 <div class="story-card">
 
 <h3>PEAK</h3>
 
 <p>
+2016 stands out as a defining run-scoring season in the
+analysis.
 
-Identify the period where the selected performance
-indicators reached their strongest levels and explain
-what the data shows.
+Kohli scored 973 runs at a 152.03 strike rate, combining
+exceptional run volume with a high scoring rate.
 
+The run-composition view also shows a substantial contribution
+from both accumulation and boundary scoring.
 </p>
 
 </div>
@@ -610,10 +823,12 @@ what the data shows.
 <h3>DIP</h3>
 
 <p>
+2022 provides a contrasting scoring-efficiency profile.
 
-Identify the period where important performance indicators
-declined and explain which components changed.
-
+The dashboard records 7.35 balls per boundary and a
+39.12% dot-ball rate, indicating a lower boundary frequency
+and higher dot-ball percentage than the later seasons shown
+in the analysis.
 </p>
 
 </div>
@@ -624,18 +839,46 @@ declined and explain which components changed.
 <h3>REVIVAL</h3>
 
 <p>
+The later-period data shows increased scoring intensity
+alongside improved scoring efficiency.
 
-Identify the later period where performance indicators
-improved and explain the measurable changes.
+Balls per boundary fell to 4.79 in 2024 and 4.15 in 2026,
+while dot-ball percentage fell to 30.90% in 2024 and
+26.11% in 2026.
 
+Strike rate also reached 154.70 in 2024 and 165.85 in 2026
+in the run-scoring dashboard.
 </p>
 
 </div>
 
+
+</div>
+
+
+<div class="note">
+
+<div class="note-title">
+FINAL ANALYST NOTE
+</div>
+
+<br>
+
+<p>
+The evolution was not simply about how many runs Kohli scored —
+it was about how those runs were constructed.
+
+Across the dashboards, the story can be viewed through
+run volume, boundary contribution, dot-ball pressure,
+bowling matchups, innings phases and dismissal patterns.
+
+Together, these dimensions provide a more complete view
+of Kohli's IPL batting evolution than career totals alone.
+</p>
+
 </div>
 
 </section>
-
 
 
 <!-- ================= FOOTER ================= -->
@@ -646,7 +889,11 @@ VIRAT KOHLI · IPL CAREER EVOLUTION
 
 <br><br>
 
-CRICKET PERFORMANCE ANALYSIS · TABLEAU · BALL-BY-BALL DATA
+CRICKET PERFORMANCE ANALYSIS
+&nbsp; · &nbsp;
+TABLEAU
+&nbsp; · &nbsp;
+BALL-BY-BALL DATA
 
 </footer>
 
